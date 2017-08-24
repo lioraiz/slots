@@ -1,0 +1,193 @@
+body {
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
+}
+
+.machine {
+  background-image: url(../img/underthesea.jpg);
+  background-size: cover;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: slategray;
+  height: 500px;
+}
+
+ul {
+  width: 400px;
+  height: 129px;
+  padding: 10px 40px 10px;
+  margin: 6px auto;
+  /* background: #555; */
+  /* border: 2px solid gold; */
+  border-radius: 10px;
+}
+
+ul li {
+  height: 100px;
+  width: 100px;
+  list-style-type: none;
+  float: left;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  transition: all ease 1s;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  margin: 1px;
+}
+
+ul li reel {
+  position: absolute;
+  top: -200px;
+  left: -393px;
+  height: 500px;
+  width: 500px;
+  background: url(../img/slots.png) no-repeat;
+}
+
+.club {
+  -webkit-transform:rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+}
+
+.heart {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+
+.spade {
+  -webkit-transform:rotate(270deg);
+  -moz-transform:rotate(270deg);
+  transform:rotate(270deg);
+}
+
+.diamond {
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+
+.play {
+  margin-top:10px;
+  width: 100%;
+  background: gold;
+  border: 1px solid #777;
+  border-radius: 10px;
+  color: #Fff;
+  text-transform: uppercase;
+  font-family: 'Fontdiner Swanky', cursive;
+  font: bold 35px Fontdiner Swanky;
+  text-shadow: 1px 1px 0 #333;
+}
+
+.credit {
+  padding-left: 15px;
+  color: #Fff;
+  text-transform: uppercase;
+  font: bold 24px Fontdiner Swanky;
+  text-shadow: 1px 1px 0 #333;
+  text-align: center;
+}
+
+.funds.bet{
+  display:block
+  font-family: 'Monoton', cursive;
+  color: #Fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #333;
+  text-align: center;
+}
+
+.cashout{
+  margin-top: 60;
+  height: 100px;
+  background: rgb(48, 48, 48);
+  border: 1px solid #777;
+  border-radius: 10px;
+  padding-left: 15px;
+  color: #Fff;
+  text-transform: uppercase;
+  font: bold 24px Fontdiner Swanky;
+  text-shadow: 1px 1px 0 #333;
+  text-align: center;
+}
+
+.win{
+  background-image: url(../img/coins.png);
+  background-size: cover;
+}
+
+.endgame{
+  display:none;
+  height: 78vh;
+  background-color: rgba(0, 0, 0, 0.90);
+  border-radius: 10px;
+  color:white;
+  z-index: 2;
+  position: absolute;
+  margin-top: 88px;
+  font: bold 35px Fontdiner Swanky;
+  text-align:center;
+  padding-top: 110px;
+}
+
+.reset{
+  margin-top: 227px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background: rgb(118, 29, 29);
+  width: 200px;
+}
+
+button:hover {
+  cursor: pointer;
+
+}
+button:active {
+   box-shadow: inset 0px 0px 15px #000;
+}
+
+.spin#reel1{
+  -webkit-animation: rotate 0.8s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: rotate 0.8s infinite linear;
+}
+
+.spin#reel2{
+  -webkit-animation: rotate 1.2s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: rotate 1.2s infinite linear;
+}
+
+.spin#reel3{
+  -webkit-animation: rotate 0.7s infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: rotate 0.7s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  from { -webkit-transform:rotate(0deg) }
+  to { -webkit-transform:rotate(360deg) }
+}
+
+@-moz-keyframes rotate {
+  from { -moz-transform:rotate(0deg) }
+  to { -moz-transform:rotate(360deg) }
+}
+
+@media (max-width: 1260px){
+ul {
+    zoom: .75;
+}
+    }
+
+@media (max-width: 991px){
+ul {
+    zoom: 1;
+}
+    }

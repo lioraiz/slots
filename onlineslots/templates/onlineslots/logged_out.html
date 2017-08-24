@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Slot Machine</title>
+<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="{% static 'onlineslots/login/CSS/style.css' %}">
+</head>
+
+<body>
+  <h2 style="color: white">Logged out</h2>
+  <p>You have been successfully logged out.</p>
+  <p><a href="/login_in/">Log in</a> again.</p>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+<script src="{% static 'onlineslots/login/js/index.js'%}"></script>
+
+</body>
+</html>

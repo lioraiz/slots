@@ -18,8 +18,6 @@ ul {
   height: 129px;
   padding: 10px 40px 10px;
   margin: 6px auto;
-  /* background: #555; */
-  /* border: 2px solid gold; */
   border-radius: 10px;
 }
 
@@ -46,6 +44,11 @@ ul li reel {
   width: 500px;
   background: url(../img/slots.png) no-repeat;
 }
+
+/*
+The way the reels work is by spinning a background image which contains
+4 different icons, positioned accordingly in a class.
+*/
 
 .club {
   -webkit-transform:rotate(0deg);

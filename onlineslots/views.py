@@ -45,6 +45,7 @@ def UserFormView(request):
         form = UserForm(request.POST)
         if form.is_valid():
             newuser = form.save()
+            newuser.save()
             funds = Funds(player=newuser)
             funds.save()
             newuser = authenticate(request, username=form.cleaned_data["username"],
